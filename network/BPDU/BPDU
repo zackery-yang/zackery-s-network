@@ -1,0 +1,15 @@
+bpud란 스위치(브릿지) 간의 정보 교환을 위한 frame 데이터
+네트워크에서 발생할 수 있는 loop를 방지하기 위한 stp의 정보 데이터 - stp에 의해 브릿지 간에 주고받는 제어 프레임 - ieee 802.1에서 정의됨
+
+
+bpdu 수신 브릿지
+  수신 bpdu의 정보 활용, 자신이 만든 새로운 bpdu를 다른 브릿지로 송신
+bpdu 송출 주기
+  bpdu는 브릿지 내에서 동장하고있는 모든 포트에서 매 2초마다 보냄
+bpdu 유형 및 식별표기
+  bpdu는 802.2 frame 상의 dsap 및 ssap 필드에서 0x42로 표시
+bpdu에 담기는 주요 정보
+  root bridge id, root path cost, 송출 bid, 포트 id 등
+  
+  
+  
