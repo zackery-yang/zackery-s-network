@@ -1,0 +1,6 @@
+1. 하드 장착
+2. fdisk 명령어를 통한 하드 추가
+    fdisk /dev/sdb  > /dev 디렉터리 밑에 새로 생긴 sd* 장치를 입력하여 하드디스크를 추가
+    
+fdisk /dev/sdb
+command : 
